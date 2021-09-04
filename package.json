@@ -1,0 +1,19 @@
+{
+  "name": "gitHub-search-repo",
+  "version": "1.0.0",
+  "description": "I'm tired to do some list in the paper. I'm think, it's help me to search the price in the market before go to sell some furnitures and food.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "GitHub",
+    "REST",
+    "API",
+    "Search",
+    "Repository"
+  ],
+  "author": "Igor Menezes Portela Delgado",
+  "license": "MIT"
+}

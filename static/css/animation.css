@@ -1,0 +1,72 @@
+/* Animation to the page transition */
+.slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to{
+    transform: translateX(10px);
+    opacity: 0;
+  }
+
+  /* Animation to the not found SnackBar*/
+  .caution-enter-active {
+    transition: all .4s ease;
+    transform: scaleX(100%);
+  }
+  .caution-leave-active {
+    transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .caution-enter, .caution-leave-to{
+    transform: scaleX(0%);
+    opacity: 0;
+  }
+
+ /* Animation to shake the icon when a repository is not find*/
+  .shakeIcon-enter-active {
+    transition: all .4s ease;
+    animation: linear shake 0.5s
+  }
+  .shakeIcon-leave-active {
+    transition: all .4s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    
+  }
+  .shakeIcon-enter, .shakeIcon-leave-to{
+    transform: scaleX(0%);
+    opacity: 0;
+  }
+
+  /* Pulse the load page*/
+  .pulse {
+    animation: infinite pulsing 1s;
+  }
+
+  /* Shake animation*/
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  @keyframes pulsing {
+    0% { transform: scale(100%)}
+    10% { transform: scale(101%)}
+    20% { transform: scale(102%)}
+    30% { transform: scale(103%)}
+    40% { transform: scale(104%)}
+    50% { transform: scale(105%)}
+    60% { transform: scale(104%)}
+    70% { transform: scale(103%)}
+    80% { transform: scale(102%)}
+    90% { transform: scale(101%)}
+    100% { transform: scale(100%)}
+  }
